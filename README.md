@@ -1,4 +1,4 @@
-# Financial-Grant-Management-System
+# Grant Manager
 
 `This is a term project from my undergraduation. It does not exhibit my current programming skills`
 
