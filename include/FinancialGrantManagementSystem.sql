@@ -45,19 +45,12 @@ CREATE TABLE IF NOT EXISTS `AllUsers` (
 --
 
 INSERT INTO `AllUsers` (`RollNumber`, `Name`, `EmailId`, `Role`, `Status`, `Password`, `Accessor`, `Requester`, `Justification`) VALUES
-('UG201310003', 'Abhay Kumar Singh', 'ug201310003@iitj.ac.in', 'Admin1', 'Registered', 'abhay', NULL, NULL, ''),
-('UG201313008', 'Deepshi Garg', 'ug201313008@iitj.ac.in', 'Admin2', 'Registered', 'deepshi', NULL, NULL, ''),
-('UG201310016', 'Sai Raghav', 'ug201310016@iitj.ac.in', 'Faculty', 'Registered', 'raghav', NULL, NULL, ''),
-('UG201310005', 'Amit Jain', 'ug201310005@iitj.ac.in', 'PhD', 'Registered', 'amit', 'UG201310002', NULL, NULL),
-('UG201310004', 'Aman Singh', 'ug201310004@iitj.ac.in', 'MTech', 'Registered', 'aman', 'UG201310002', NULL, NULL),
-('UG201310002', 'Aayush Sharda', 'ug201310002@iitj.ac.in', 'Faculty', 'Registered', 'aayush', NULL, NULL, ''),
-('UG201310010', 'Avan', 'ug201310010@iitj.ac.in', 'PhD', 'Registered', 'avan', NULL, NULL, ''),
-('UG201310033', 'Shubham Saxena', 'ug201310033@iitj.ac.in', 'MTech', 'Registered', 'shubham', NULL, NULL, ''),
-('UG201312001', 'Aditya Saxena', 'ug201312001@iitj.ac.in', 'MTech', 'Registered', 'chandana', NULL, NULL, ''),
-('UG201310009', 'Arnav Jindal', 'ug201310009@iitj.ac.in', 'Faculty', 'Registered', 'arnav', NULL, NULL, ''),
-('UG201310025', NULL, 'ug201310025@iitj.acin', 'MTech', 'Unregistered', NULL, NULL, NULL, NULL),
-('UG201313010', 'Sangram', 'ug201313010@iitj.ac.in', 'PhD', 'Registered', 'sangram', NULL, NULL, NULL),
-('UG201311019', 'Kanika', 'ug201311019@iitj.ac.in', 'PhD', 'Registered', 'kanika', NULL, NULL, NULL);
+('185028', 'Nishit', '185028@nith.ac.in', 'Admin1', 'Registered', 'nishit', NULL, NULL, ''),
+('185060', 'Shubhang', '185060@nith.ac.in', 'Admin2', 'Registered', '185060', NULL, NULL, ''),
+('185038', 'Kishore', '185038@nith.ac.in', 'MTech', 'Registered', '185038', NULL, NULL, ''),
+('185010', 'Akshay', '185010@nith.ac.in', 'PhD', 'Registered', '185010', NULL, NULL,''),
+('185079', 'Prachi', '185079@nith.ac.in', 'PhD', 'Registered', '185079', NULL, NULL,''),
+('185031', 'Vanshaj', '185031@nith.ac.in', 'MTech', 'Registered', '185031', NULL, NULL, '');
 
 -- --------------------------------------------------------
 
@@ -86,12 +79,13 @@ CREATE TABLE IF NOT EXISTS `GrantDetails` (
 --
 
 INSERT INTO `GrantDetails` (`GrantID`, `RollNumber`, `Type`, `Justification`, `AmountRequested`, `AmountApproved`, `RequestDate`, `ApprovalDate`, `SettlementDate`, `GrantStatus`) VALUES
-(71, 'UG201310002', 'Travel Allowances', 'Conference in IITB', 12345, 12345, '2016-03-09', '2016-03-09', NULL, 'Unsettled'),
-(72, 'UG201310005', 'Resources', 'Stationary', 120, NULL, '2016-03-09', NULL, NULL, 'Admin2_Rejected'),
-(74, 'UG201310005', 'Resources', 'Printer', 2000, NULL, '2016-03-09', NULL, NULL, 'Admin2_Approved'),
-(75, 'UG201310004', 'Travel Allowances', 'Germany DAAD', 2400, NULL, '2016-03-09', NULL, NULL, 'Cancelled'),
-(76, 'UG201313010', 'Resources', 'New Research', 12345, 123, '2016-03-09', '2016-03-09', NULL, 'Unsettled'),
-(77, 'UG201310002', 'Travel Allowances', 'feadsxcv ', 1234, 1000, '2016-03-10', '2016-03-10', '2016-03-10', 'Settled');
+(80, '185030', 'Travel Allowances', 'feadsxcv ', 1234, 1000, '2016-03-10', '2016-03-10', '2016-03-10', 'Settled'),
+(81, '185031', 'Medical', 'Conference in IITB', 12345, 12345, '2016-03-09', '2016-03-09', NULL, 'Unsettled'),
+(82, '185010', 'Resources', 'Stationary', 120, NULL, '2016-03-09', NULL, NULL, 'Admin2_Rejected'),
+(83, '185079', 'Travel Allowances', 'Printer', 2000, NULL, '2016-03-09', NULL, NULL, 'Admin2_Approved'),
+(84, '185079', 'Resources', 'Germany DAAD', 2400, NULL, '2016-03-09', NULL, NULL, 'Cancelled'),
+(85, '185031', 'Travel Allowances', 'New Research', 12345, 123, '2016-03-09', '2016-03-09', NULL, 'Unsettled');
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
